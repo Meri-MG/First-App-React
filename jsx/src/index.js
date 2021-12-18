@@ -3,53 +3,15 @@
 import React from 'react';
 import reactDOM from 'react-dom';
 import faker from 'faker';
+import CommentDetail from './CommentDetail';
 
 // Create a react component
 const App = () => {
 	return (
     <div className="ui container comments">
-		  <div className="comment">
-        <a href="/" className="avatar">
-					<img alt="avatar" src={ faker.image.image()}/>
-				</a>
-				<div className="content">
-				  <a href="/" className="author">
-					Meri
-					</a>
-					<div className="metadata">
-					  <span className="date"> Today at 6:00PM</span>
-					</div>
-					<div className="text"> Nice post blog!</div>
-				</div>
-			</div>
-			<div className="comment">
-        <a href="/" className="avatar">
-					<img alt="avatar" src={ faker.image.image()}/>
-				</a>
-				<div className="content">
-				  <a href="/" className="author">
-					Meri
-					</a>
-					<div className="metadata">
-					  <span className="date"> Today at 6:00PM</span>
-					</div>
-					<div className="text"> Nice post blog!</div>
-				</div>
-			</div>
-			<div className="comment">
-        <a href="/" className="avatar">
-					<img alt="avatar" src={ faker.image.image()}/>
-				</a>
-				<div className="content">
-				  <a href="/" className="author">
-					Meri
-					</a>
-					<div className="metadata">
-					  <span className="date"> Today at 6:00PM</span>
-					</div>
-					<div className="text"> Nice post blog!</div>
-				</div>
-			</div>
+		<CommentDetail author="Meri"/>
+		<CommentDetail author="Steven"/>
+		<CommentDetail author="Aku"/>
 		</div>
 				
 	);
